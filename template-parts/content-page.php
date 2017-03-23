@@ -37,13 +37,35 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	
-		<footer class="entry-footer">
+         <?php
+	if ( 'post' === get_post_type() ) : ?> 
+        
+        <footer class="entry-footer">
                     
                     
                     <?php angry_doc_entry_footer(); ?>
 		
-		</footer><!-- .entry-footer -->
+		</footer
+			
+		  <?php else : ?>
+			
+                    
+                    <?php
+			edit_post_link(
+				sprintf(
+					/* translators: %s: Name of current post */
+					esc_html__( 'Edit %s', 'angry_doc' ),
+					the_title( '<span class="screen-reader-text">"', '"</span>', false )
+				),
+				'<span class="edit-link">',
+				'</span>'
+			);
+		?>
+		
+		
+		 <?php endif;
+                
+              ?>  
+		<!-- .entry-footer -->
 	
 </article><!-- #post-## -->

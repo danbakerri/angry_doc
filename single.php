@@ -15,8 +15,11 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content-page', get_post_format() );
-
+			// get_template_part( 'template-parts/content-page', get_post_format() );
+                        get_template_part( 'template-parts/content', 'page' ); 
+                        
+                        
+                        
 			the_post_navigation( array(
 				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'angry_doc' ) . '</span> ' .
 					'<span class="screen-reader-text">' . __( 'Next post:', 'angry_doc' ) . '</span> ' .

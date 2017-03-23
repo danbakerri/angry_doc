@@ -48,7 +48,7 @@ function angry_doc_entry_footer() {
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'angry_doc' ) );
-		if ( $categories_list && angry_doc_categorized_blog() ) {
+		if ( $categories_list || angry_doc_categorized_blog() ) {
 			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'angry_doc' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 

@@ -42,7 +42,7 @@ get_header(); ?>
                             
                             
                             if ( $first_post == true ) {
-                            get_template_part( 'template-parts/content-page', 'single' );
+                            get_template_part( 'template-parts/content', 'page' );
                             } else {
 				get_template_part( 'template-parts/content', get_post_format() ); 
                             }
