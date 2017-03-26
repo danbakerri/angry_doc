@@ -4,7 +4,7 @@ Theme URI: https://github.com/sourmoose/angry_doc
 Author: Dan Baker
 Author URI: http://danthewebman.com
 Description: A simple Wordpress theme
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: Angry Doc
@@ -2379,4 +2379,13 @@ object {
 .search-no-results .cd-primary-nav .search-field{
 width: 280px;
  padding: .5em 1em;   
+}
+
+.home .sd-sharing-enabled {
+    display: none;
+}
+
+
+.home .first_post .sd-sharing-enabled {
+    display: block;
 }
