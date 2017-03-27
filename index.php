@@ -41,9 +41,9 @@ get_header(); ?>
                             $first_post = $wp_query->current_post == 0 && !is_paged() && is_front_page();
                             
                             
-                            if ( $first_post == true ) {
-                            get_template_part( 'template-parts/content', 'page' );
-                            } else {
+                            if ( $first_post == true ) { ?>
+                    <div class="first_post">  <?php get_template_part( 'template-parts/content', 'page' ); ?> </div>
+                          <?php  } else {  
 				get_template_part( 'template-parts/content', get_post_format() ); 
                             }
                             

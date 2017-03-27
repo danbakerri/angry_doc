@@ -110,6 +110,16 @@ function angry_doc_widgets_init() {
 add_action( 'widgets_init', 'angry_doc_widgets_init' );
 
 
+register_sidebar( array(
+		'name'          => esc_html__( 'Footer Widgets', 'angry_doc' ),
+		'id'            => 'footer-1',
+		'description'   => esc_html__( 'Add footer here.', 'angry_doc' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
 /**
 
  * Enqueue scripts and styles.

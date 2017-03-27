@@ -3,6 +3,11 @@ Angry Doc
 
 Angry Doc is a simple WordPress Theme. I started with the stater theme underscores and then followed https://github.com/mor10 video course on Lyda WordPress: Building Themes From Scratch Using Underscores. 
 
+Version 1.0.2
+-------------
+
+In this version there are some CSS fixes to display the Author and Categories. Also you can now add widgets to the footer area!
+
 Credits
 -------
 
